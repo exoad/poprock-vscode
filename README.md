@@ -5,7 +5,14 @@ A vibrant dark theme using <a href="https://github.com/exoad/Design/tree/masta/p
 <br/>
 <br/>
 <img src="./repo/screenshot.png" align="center"/>
+<br/>
+<br/>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=exoad.poprock"><img src="https://img.shields.io/badge/Install_It!-ff2667?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" height=40 /></a>
+  
 </div>
+
+
 
 ## Installing
 
