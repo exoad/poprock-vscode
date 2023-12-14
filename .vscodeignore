@@ -3,3 +3,4 @@
 .gitignore
 repo
 /build
+.gitattributes
