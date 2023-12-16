@@ -1,0 +1,35 @@
+name: VSIX Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      comments:
+        description: "Build VSIX"
+        required: false
+        default: "Nothing"
+        type: string
+
+jobs:
+  build_information:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "$BUILD_CMTS"
+        env:
+          BUILD_CMTS: ${{ inputs.comments }}
+  build_vsix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire Node.js
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - run: npm install -g @vscode/vsce
+      - run: vsce package
+      - uses: actions/upload-artifact@v3
+        with:
+          name: poprock.vsix
+          path: .
+          
+          
