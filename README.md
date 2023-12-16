@@ -1,6 +1,9 @@
 <h1 align="center">Poprock-vscode</h1>
 
 <div align="center">
+  
+[![VSIX Build](https://github.com/exoad/poprock-vscode/actions/workflows/build_vsix.yml/badge.svg)](https://github.com/exoad/poprock-vscode/actions/workflows/build_vsix.yml)
+  
 A vibrant dark theme using <a href="https://github.com/exoad/Design/tree/masta/poprock">my poprock theme</a>
 <br/>
 <br/>
