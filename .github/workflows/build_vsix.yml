@@ -13,9 +13,8 @@ jobs:
   build_information:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "$BUILD_CMTS"
-        env:
+      - run: echo "$BUILD_CMTS"
+        env: 
           BUILD_CMTS: ${{ inputs.comments }}
   build_vsix:
     runs-on: ubuntu-latest
